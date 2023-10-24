@@ -1,0 +1,105 @@
+/* NULL begin */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* NULL End */
+
+.wrapper{
+	padding: 0 15%;
+}
+.wrapper + *{
+	color: #000;
+}
+
+
+.h_1{
+	text-align: center;
+	font-size: 30px;
+}
+#first_ol{
+color:brown;
+}
+#first_ul{
+color: blanchedalmond;
+}
+#second_ul{
+	color: blue;
+}
+span{
+	color: aqua;
+}
+.green{
+	color: green;
+}
+span.green{
+	color:rgb(221, 71, 166);
+}
+
+#first_ul span{
+	color: rgb(56, 1, 1);
+}
+
+.wrapper ~ *{
+	color: #ff0000;
+}
+
+/* Все span с атрибутом "lang" будут жирными */
+span[lang] {
+	font-weight: bold;
+ }
+ 
+ /* Все span в Португалии будут зелёными */
+ span[lang="pt"] {
+	color: green;
+ }
+ 
+ /* Все span с американским английским будут синими */
+ span[lang~="en-us"] {
+	color: blue;
+ }
+ 
+ /* Любые span на китайском языке будут красными, как на упрощённом китайском (zh-CN) так и на традиционном (zh-TW) */
+ span[lang|="zh"] {
+	color: red;
+ }
+ 
+ /* Все внутренние ссылки будут иметь золотой фон */
+ a[href^="#"] {
+	background-color: gold;
+ }
+ 
+ /* Все ссылки с url заканчивающимся на .cn будут красными */
+ a[href$=".cn"] {
+	color: red;
+ }
+ 
+ /* Все ссылки содержащие "example" в url будут иметь серый фон */
+ a[href*="example"] {
+	background-color: #cccccc;
+ }
